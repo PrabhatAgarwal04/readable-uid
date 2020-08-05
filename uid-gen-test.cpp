@@ -6,6 +6,7 @@
 TEST(UID, UID_is_generated_within_length_limit) {
   std::string uid = uidgen();
   ASSERT_TRUE(uid.length() > 0);
+  
 }
 
 int main(int argc, char **argv) {
