@@ -10,7 +10,7 @@ TEST(UID, UID_is_generated_within_length_limit) {
 }
 TEST(UID, UID_is_generated_notin_length_limit) {
   std::string uid = uidgen();
-  ASSERT_FALSE(uid.length() > 64);
+  ASSERT_TRUE(uid.length() < 64);
   
 }
 
